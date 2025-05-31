@@ -29,6 +29,7 @@ o Turn on Windows Defender Firewall: Ensure the firewall is enabled for both pri
 ### Enable UFW: 
         sudo ufw enable.
 
+
 ## 2.List current firewall rules. 
 
  To list current firewall rules:
@@ -47,6 +48,8 @@ o Turn on Windows Defender Firewall: Ensure the firewall is enabled for both pri
 2.     sudo iptables -n -L INPUT (list INPUT chain rules)
 
 3.     sudo iptables -n -L OUTPUT (list OUTPUT chain rules)
+
+![firewall_list](https://github.com/user-attachments/assets/4662829b-bd1a-4699-a8e0-b9007f0cac0b)
 
 ## 3.Add a rule to block inbound traffic on a specific port (e.g., 23 for Telnet).
 
@@ -73,6 +76,9 @@ To add a rule to block inbound traffic on a specific port:
 ### 2. iptables:
       sudo service iptables restart (or sudo systemctl restart iptables)
 
+![ufw deny](https://github.com/user-attachments/assets/12b676ca-18fd-46ab-930e-16b5040b0845)
+
+
 ## 4.Test the rule by attempting to connect to that port locally or remotely.
 
 To test the rule:
@@ -97,6 +103,7 @@ To test the rule:
 
          nc -zv <IP> 23
 
+![ufw test](https://github.com/user-attachments/assets/7f22a216-99d8-45ab-a50f-2108677a3d8a)
 
 ## 5.Add rule to allow SSH (port 22) if on Linux.
 
@@ -126,6 +133,8 @@ To add a rule to allow SSH (port 22) on Linux:
 
 This allows incoming SSH connections on port 22.
 
+![ufw ssh](https://github.com/user-attachments/assets/8759a128-f265-45ea-9daf-f0fab266f499)
+
 ## 6.Remove the test block rule:
 
 ### UFW:
@@ -143,6 +152,8 @@ This allows incoming SSH connections on port 22.
              
  2.       sudo iptables-save
 
+![ufw remove](https://github.com/user-attachments/assets/6add5a43-d689-4cda-9638-f8ec395d46df)
+
 
 ## 7.To verify the rule allow/removal:
 
@@ -155,6 +166,8 @@ This allows incoming SSH connections on port 22.
         sudo iptables -n -L INPUT
 
 Check if the block rule for port 23 is removed.
+
+![firewall verify](https://github.com/user-attachments/assets/0856adfc-7010-468d-a1c8-de7374a4ca1a)
 
 ## 8.Summarize how firewall filters traffic.
 
