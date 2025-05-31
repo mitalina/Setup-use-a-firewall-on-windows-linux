@@ -79,19 +79,23 @@ To test the rule:
 
 ### Local Testing:
 
-1. Should timeout or connection refused
-        telnet localhost 23
+1. Should timeout or connection refused:
+ 
+         telnet localhost 23
    
 3. Should show connection failed:
-        nc -zv localhost 23 
+ 
+         nc -zv localhost 23 
 
 ### Remote Testing:
 
-1. Should timeout or connection refused
-       telnet <IP> 23
+1. Should timeout or connection refused:
+
+         telnet <IP> 23
    
-2. Should show connection failed
-       nc -zv <IP> 23
+3. Should show connection failed:
+
+         nc -zv <IP> 23
 
 
 ## 5.Add rule to allow SSH (port 22) if on Linux.
