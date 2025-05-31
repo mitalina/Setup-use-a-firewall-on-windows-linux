@@ -195,3 +195,33 @@ o Allow necessary traffic: Enable legitimate communication.
 
 By controlling traffic flow, firewalls enhance network security and protect against threats.
 
+
+## How to Block or Open a Port in Windows 10/8/7 Firewall:
+o Open Windows Firewall and find the Advanced Settings.
+
+![Screenshot 2025-05-31 202543](https://github.com/user-attachments/assets/8307ad91-16fa-4c61-8475-643dbc7f8b81)
+
+o Open the List of Inbound Rules. 
+
+o Set up a New Rule. 
+
+![Screenshot 2025-05-31 202610](https://github.com/user-attachments/assets/440e5238-d18a-4906-886c-4d379d033e40)
+
+o Open the New Inbound Rule Wizard. 
+
+![Screenshot 2025-05-31 202646](https://github.com/user-attachments/assets/5c41a157-27ce-455d-885d-af7a2182dd81)
+
+o Block/allow the Connection. 
+
+![Screenshot 2025-05-31 202646](https://github.com/user-attachments/assets/45c3e050-6d6d-4beb-8ab3-581104cbb404)
+
+o Apply Your New Rule to Each Profile Type. 
+
+![Screenshot 2025-05-31 202724](https://github.com/user-attachments/assets/7177e2b5-1af8-4c25-87b9-2ecb1fa9e9df)
+
+o Name Your Rule and Configure the Settings.
+
+![Screenshot 2025-05-31 202807](https://github.com/user-attachments/assets/8ce1bea8-937e-4a34-8a2f-0e39cc26f893)
+
+
+
